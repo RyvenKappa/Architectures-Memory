@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,12pt]{article}
 \input{config.tex}
 
 \title{Architectures and Service Platforms: Final Project}
@@ -39,20 +39,23 @@
 \clearpage
 \include{includes/acro.tex}
 \clearpage
-\fancyhead[R]{\textit{INTRODUCTION}}
+\fancyhead[R]{\textit{Introduction}}
 \include{includes/introduction.tex}
 \clearpage
-\fancyhead[R]{\textit{CONTEXTUALIZATION OF THE PROJECT}}
-\include{includes/contex.tex}
+\fancyhead[R]{\textit{System Description}}
+\include{includes/sysdescrip.tex}
 \clearpage
-\fancyhead[R]{\textit{WORK ORGANIZATION}}
-\include{includes/organization.tex}
+\fancyhead[R]{\textit{Project Scope}}
+\include{includes/scope.tex}
 \clearpage
-\fancyhead[R]{\textit{REQUIREMENT ANALYSIS}}
+\fancyhead[R]{\textit{Previous Work}}
+\include{includes/sota.tex}
+\clearpage
+\fancyhead[R]{\textit{Requirement Analysis}}
 \include{includes/requirements.tex}
 \clearpage
-\fancyhead[R]{\textit{DESIGN}}
-\include{includes/design.tex}
+\fancyhead[R]{\textit{System Architecture}}
+\include{includes/architecture.tex}
 \clearpage
 \fancyhead[R]{\textit{IMPLEMENTATION}}
 \include{includes/implementation.tex}
@@ -65,10 +68,5 @@
 \clearpage
 \fancyhead[R]{\textit{REFERENCES}}
 \printbibliography[title={REFERENCES}, heading=bibnumbered]
-\clearpage
-\fancyhead[R]{\textit{APPENDIX}}
-\section{APPENDIX: Control message structures}
-\label{appendix}
-This is the first appendix.
-%\lstinputlisting[caption={Control.h}, label={lst:myfile}]{control.h}
+
 \end{document}
