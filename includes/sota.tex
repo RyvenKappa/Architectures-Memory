@@ -1,1 +1,91 @@
-\section{PREVIOUS WORK}
+\section{Previous Works}
+
+Some of the topics covered in this project follow some existing research lines line:
+\begin{itemize}
+    \item Wireless sensor networks.
+    \item Fire detection sensors.
+    \item Animal intrusion detection.
+\end{itemize}
+
+In relation to this, there are already some examples of working projects that focus on 
+protecting the crops from the external risks mentioned in earlier chapters. These projects achieve solutions 
+using current technologies, which will be analyzed in this chapter to understand the \textit{state of the art}. 
+
+The analysis of this projects results in a classification into three main types of solution design: \acrshort{iot}-based systems, 
+solutions that incorporate AI, and finally hybrid systems.
+
+\subsection{Type of systems}
+\subsubsection*{\acrshort{iot}-based solutions}
+
+The Internet of Things has become an important tool for detecting risks. Sensors and embedded systems are used 
+to collect real-time information and analyze the presence of wild animals or fires in the proximity of controlled areas.
+
+These solutions architecture contain the next elements:
+\begin{itemize}
+    \item A set of intercommunicated nodes that obtain information through and send data through a wireless network.
+    \item A middleware layer to operate and integrate all this information for the user-level applications.
+    \item End-User application layer.
+\end{itemize}
+
+\subsubsection*{AI-based solutions}
+
+Solutions using AI and machine learning are effective for animal classification and recognition, and this usage has been extended to detect 
+behavior, like farm intrusions\cite{PDFWildAnimals}. These systems are typically designed to process images collected by cameras and maybe 
+additional information from sensors, identifying patterns that allow different species or even animals and humans to be distinguished.
+
+For instance, algorithms such as YOLOv8 have proven highly effective at detecting animals in real-time using image 
+analysis\cite{WildAnimalDetection}. These systems divide images into grids, simultaneously predict bounding boxes, and assign probability to detected 
+classes. These tools can also be used to process thermal images and detect fires. 
+
+The main drawback of these systems is the training stage with large pre-labeled data sets, needing a preparation of training data 
+in order to achieve the results expected. This step is also very heavy in power consumption, and, depending on the objective, it may not be needed.
+
+\subsubsection*{Hybrid solutions}
+
+This is the main paradigm being followed by the \acrshort{iot} industry in order to solve problems. These architectures 
+integrate AI capabilities into the middleware to offer more complete and adaptable solutions.
+
+An example of this kind of system is a project that combines PIR sensors and thermal cameras to collect data. This data is processed 
+in the middleware by machine learning models to classify the type of animal detected, reducing the number of false positives and optimizing 
+response, as specific measures can be applied depending on the identified species\cite{StudyMethodsAnimal}.
+
+\subsection{Wireless Sensor Networks}
+
+To monitor the presence of animals or fires, different devices that include sensors can be interconnected with each other to obtain 
+information of the real world.
+
+To transmit this data, different wireless technologies are used, and there can be more that one technology for any 
+implementation, as it is device-dependent. 
+
+The technology selected depend on different parameters:
+\begin{itemize}
+    \item Speed needed.
+    \item Need for a license-free environment, using the \acrfullr{ism} band.
+    \item Maximum number of nodes interconnected.
+    \item Size of data sent and period of that data.
+    \item Is low power consumption needed on the node?.
+\end{itemize}
+Some of the mainly used technologies are Wi-Fi, mobile networks (LTE-M or NB-IoT), \acrfullr{lorawan} or SigFox. Some of the key characteristics of this technologies can be seen in the next table.
+\begin{table}[H]
+    \begin{center}
+        \begin{tabular}{p{0.10\textwidth} |  p{0.20\textwidth}  p{0.20\textwidth} p{0.20\textwidth} p{0.20\textwidth}}
+            \hline
+            \textbf{Param} & \textbf{LoRaWAN} & \textbf{SigFox} & \textbf{NB-IOT} & \textbf{Wi-Fi}\\
+            \hline
+            Range & \makecell{$\leq5$km (Urban)\\$\leq15$km (Rural)} & \makecell{$\leq10$km (Urban)\\$\leq50$km (Rural)} & $\leq15$ km & $\leq40$ m\\
+            \hline
+            Licensed band? & No & No & Yes & No\\
+            \hline
+            Data Rate & \makecell{37.5 kbps (LoRa) \\ 50 kbps (FSK)} & \makecell{100 bps (UL) \\ 600 bps (DL)} & $\leq150$ kbps & Several MBps\\
+            \hline
+        \end{tabular} 
+    \end{center}
+    \caption{Parameter differences between wireless network technologies}
+    \label{ReqGeneral}
+\end{table}
+
+\subsection{Study on the sensors being used}
+\todo[inline]{Poner un resumen de los tipos de sensores}.
+
+\subsection{Middleware technologies}
+\todo[inline]{Poner alguna parrafada, con un texto sobre thingsboard, nodered y kafka}.
