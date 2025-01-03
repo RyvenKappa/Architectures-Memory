@@ -60,12 +60,13 @@ implementation, as it is device-dependent.
 The technology selected depend on different parameters:
 \begin{itemize}
     \item Speed needed.
-    \item Need for a license-free environment, using the \acrfullr{ism} band.
+    \item Need for a license-free environment, for example, technologies like \acrfullr{lorawan} or \texttt{SigFox} use the \acrfullr{ism} band, while $4G$ and $5G$ technologies use non-free bands.
     \item Maximum number of nodes interconnected.
     \item Size of data sent and period of that data.
     \item Is low power consumption needed on the node?.
+    \item Some technologies need GateWays, while others only need the buy of the end node.
 \end{itemize}
-Some of the mainly used technologies are Wi-Fi, mobile networks (LTE-M or NB-IoT), \acrfullr{lorawan} or SigFox. Some of the key characteristics of this technologies can be seen in the next table.
+Some of the mainly used technologies are Wi-Fi, mobile networks (LTE-M or NB-IoT), \acrshort{lorawan} or SigFox. Some of the key characteristics of this technologies can be seen in the next table\cite{IoTSensorNetwork}\cite{surveyLPWAtechnology}\cite{SigfoxEnergyConsumption}.
 \begin{table}[H]
     \begin{center}
         \begin{tabular}{p{0.10\textwidth} |  p{0.20\textwidth}  p{0.20\textwidth} p{0.20\textwidth} p{0.20\textwidth}}
@@ -78,14 +79,58 @@ Some of the mainly used technologies are Wi-Fi, mobile networks (LTE-M or NB-IoT
             \hline
             Data Rate & \makecell{37.5 kbps (LoRa) \\ 50 kbps (FSK)} & \makecell{100 bps (UL) \\ 600 bps (DL)} & \multicolumn{1}{c}{$\leq150$ kbps} & \multicolumn{1}{c}{Several MBps}\\
             \hline
+            Current & \makecell{$32 mA$ \\ $1 \mu A$ (Sleep)} & \makecell{$27 mA$ (Tx) \\ $16 \mu A$ (Sleep)} & \makecell{$120-300 mA$ \\ $5 \mu A$ (Sleep)} & \\
+            \hline
         \end{tabular} 
     \end{center}
     \caption{Parameter differences between wireless network technologies}
     \label{ReqGeneral}
 \end{table}
 
-\subsection{Study on the sensors being used}
-\todo[inline]{Poner un resumen de los tipos de sensores}.
+As seen, SigFox or \acrshort{lorawan} can be really useful for new projects that have less budget or need more range.
 
-\subsection{Middleware technologies}
-\todo[inline]{Poner alguna parrafada, con un texto sobre thingsboard, nodered y kafka}.
+\subsection{Sensors for risk management systems}
+The sensors used for these kind of systems varies across the state of the art, but there are some specific type of technologies 
+that are commonly used.
+\subsubsection*{Fire detection sensors}
+Some of the most common sensors are fire detection sensors, some types can be:
+\begin{itemize}
+    \item \textbf{\acrfullr{ir}}: react to the presence of flames analyzing parts of the spectrum.
+    \item \textbf{\acrfullr{uv}}: these type of sensors respond to the instant a flame appears.
+    \item \textbf{Other types}: such as photoelectrical sensors or ionization sensors.
+\end{itemize}
+
+The most used fire sensors are the \acrshort{ir} sensors, mostly for their low price and fast reaction time. Usually these sensors information 
+alone isn't able to detect a fire hazard without false positives, so the information is enhanced with information like temperature, humidity or even 
+soil moisture.
+\subsubsection*{Animal intrusion detection}
+
+Various sensors are used for the detection of animals: light-beam interruption sensors, radar, thermal radiation sensors and optical or thermal sensors. 
+As it is required to cover big areas with these sensors, the power requirements of the platforms need to be considered, balancing this with the range covered. 
+In this regard, the most used for detecting the presence of animals around the crop field are \acrfullr{pir} sensors. These sensors are passive and use pyroelectric electronics to 
+detect changes in radiation that could indicate the presence of a living animal. 
+
+These sensors are also good in terms of power consumption, some modern ones achieving less than $30 \mu A$\cite{astind250613}, but as the range depends on the application, decisions about the model 
+are needed. The range and the angle that this sensors are able to use depend mainly on the lens. Two types of lens are used, multisegmented or single-segmented fresnel lens.
+The multisegmented usually can achieve a minimum detection range of $20 m$, while the seconds can get to $45 m$\cite{IoTSensorNetwork}.
+
+
+As an example of their usage, there are systems that have PIR sensors to detect movements in the environment, as well as load cells to differentiate small animals from humans\cite{ImplementationCropProtection}. 
+These nodes can communicate with each other and with central devices using Wi-Fi. In case of detection, these systems can activate acoustic alarms to scare away animals, while sending alerts to farmers.
+
+\subsubsection*{\acrfullr{rfid} approaches}
+Another line of research employs RFID technology to identify individual animals using implanted tags. 
+When an animal with a tag approaches a protected area, the system detects it and generates deterrent measures, 
+such as sounds or artificial fog. 
+
+This approach, while effective, requires equipping animals with devices which can limit their applicability to certain species.
+
+\clearpage
+\subsection{Active responses}
+Modern IoT systems not only detect animals, but also implement active responses. In the early works for Smart Farming, the 
+usual actuator would be a sound generation system, moving elements or even water pumps to scare the wild animal.
+
+With the new technologies like mobile phones, the use of these systems has been expanded. For example, some projects include ultrasonic sensors 
+and thermal cameras to identify animals of various species and emit specific sounds to repel them. 
+In addition, the use of mobile applications is used to notify users about intrusions in real time, allowing the user to take the final decision 
+about what the system should do.
