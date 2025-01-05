@@ -89,48 +89,100 @@ Some of the mainly used technologies are Wi-Fi, mobile networks (LTE-M or NB-IoT
 
 As seen, SigFox or \acrshort{lorawan} can be really useful for new projects that have less budget or need more range.
 
-\subsection{Sensors for risk management systems}
+\subsection{Sensors for crop protection systems}
 The sensors used for these kind of systems varies across the state of the art, but there are some specific type of technologies 
 that are commonly used.
 \subsubsection*{Fire detection sensors}
-Some of the most common sensors are fire detection sensors, some types can be:
+Some of the most common sensors for prototyping are fire detection sensors, some types can be:
 \begin{itemize}
     \item \textbf{\acrfullr{ir}}: react to the presence of flames analyzing parts of the spectrum.
     \item \textbf{\acrfullr{uv}}: these type of sensors respond to the instant a flame appears.
     \item \textbf{Other types}: such as photoelectrical sensors or ionization sensors.
 \end{itemize}
 
-The most used fire sensors are the \acrshort{ir} sensors, mostly for their low price and fast reaction time. Usually these sensors information 
+The most used fire sensors are the \acrshort{ir} sensors, mostly for their low price and fast reaction time. Usually the information of these sensors 
 alone isn't able to detect a fire hazard without false positives, so the information is enhanced with information like temperature, humidity or even 
-soil moisture.
+soil moisture. Finally, one important problem of this sensors is that the detection range is very low(can be around 2 meters) and can not be applied to open environments.
+
+Gas presence sensors are also used for detecting fires. They contain a detection capsule composed of an electro-chemical that varies it's resistance if there are specific substances present. 
+
+These can prove to be useful to detect different types of fires, as they can detect the presence of:
+\begin{itemize}
+    \item Smoke.
+    \item Alcohol.
+    \item Carbon monoxide.
+    \item Hydrogen.
+    \item Sulfuric Acid.
+    \item Etc.
+\end{itemize}
+In the use case of this study, the most useful is the smoke detector.
+
 \subsubsection*{Animal intrusion detection}
 
-Various sensors are used for the detection of animals: light-beam interruption sensors, radar, thermal radiation sensors and optical or thermal sensors. 
+There are different approaches for the detection. One key aspect is the animal is controlled, if this is the case, the system can be implemented with an approach based on \acrfullr{rfid}. 
+This line of research employs RFID technology to identify individual animals using implanted tags. When an animal with a tag approaches a protected area, 
+the system detects it and generates deterrent measures, such as sounds or artificial fog. 
+
+This approach, while effective, requires knowing the animal and equipping them with sensors, which can limit their applicability to certain species. 
+
+But if the animal is wild, there is no possibility for sensors to be equipped to the animal. It is neither cost-effective nor scalable. To solve this, there are different technologies than are applied: 
+light-beam interruption sensors, radar, thermal radiation sensors and optical or thermal sensors. 
 As it is required to cover big areas with these sensors, the power requirements of the platforms need to be considered, balancing this with the range covered. 
-In this regard, the most used for detecting the presence of animals around the crop field are \acrfullr{pir} sensors. These sensors are passive and use pyroelectric electronics to 
+In this regard, the most used for detecting the presence of animals around the crop field are \acrfullr{pir} sensors. These sensors are passive (the needed current order is $\mu A$, compared to the others that need to be constantly active) and use pyroelectric electronics to 
 detect changes in radiation that could indicate the presence of a living animal. 
 
 These sensors are also good in terms of power consumption, some modern ones achieving less than $30 \mu A$\cite{astind250613}, but as the range depends on the application, decisions about the model 
-are needed. The range and the angle that this sensors are able to use depend mainly on the lens. Two types of lens are used, multisegmented or single-segmented fresnel lens.
-The multisegmented usually can achieve a minimum detection range of $20 m$, while the seconds can get to $45 m$\cite{IoTSensorNetwork}.
+are needed. The range and the angle that this sensors are able to use depend mainly on the lens, which are usually Fresnel lens.
+
+Fresnel lens allow for light aggregation to one focal point without the need for concave of convex lens, thus, being easy to manufacture and to carry. For \acrshort{pir} sensors 
+two types of lens are used, multisegmented or single-segmented Fresnel lens.
+The multisegmented usually can achieve a minimum detection range of $20 m$, while the seconds can get up to $45 m$\cite{IoTSensorNetwork}.
 
 
 As an example of their usage, there are systems that have PIR sensors to detect movements in the environment, as well as load cells to differentiate small animals from humans\cite{ImplementationCropProtection}. 
 These nodes can communicate with each other and with central devices using Wi-Fi. In case of detection, these systems can activate acoustic alarms to scare away animals, while sending alerts to farmers.
 
-\subsubsection*{\acrfullr{rfid} approaches}
-Another line of research employs RFID technology to identify individual animals using implanted tags. 
-When an animal with a tag approaches a protected area, the system detects it and generates deterrent measures, 
-such as sounds or artificial fog. 
+Another example is a project to detect the intrusion of wild animal in roads\cite{IoTSensorNetwork}. This is done by putting nodes alongside the road, every $50 m$. This is achieved studying the lens needed in that use case. 
 
-This approach, while effective, requires equipping animals with devices which can limit their applicability to certain species.
-
-\clearpage
 \subsection{Active responses}
-Modern IoT systems not only detect animals, but also implement active responses. In the early works for Smart Farming, the 
-usual actuator would be a sound generation system, moving elements or even water pumps to scare the wild animal.
-
-With the new technologies like mobile phones, the use of these systems has been expanded. For example, some projects include ultrasonic sensors 
+Modern IoT systems not only detect animals or fires, but also implement active responses. In the early works for Smart Farming, the 
+usual actuator would be automatic sound generation systems (to scare the wild animal), moving elements or water pumps (to stop the fire hazard).
+Nowadays the use of new technologies like mobile phones has expanded. For example, some projects include ultrasonic sensors 
 and thermal cameras to identify animals of various species and emit specific sounds to repel them. 
 In addition, the use of mobile applications is used to notify users about intrusions in real time, allowing the user to take the final decision 
 about what the system should do.
+
+The projects seen doesn't include functionalities like:
+\begin{itemize}
+    \item Functionalities to control or commanding the network.
+    \item Functionalities that allow for scalability in the system. 
+    \item Functionalities based around roles, to allow for more that one user with different attributes.
+\end{itemize}
+
+But this are not easy to implement, as they need bigger architectures and specific middleware developed. This also means that more computing power is needed in the system.
+
+\clearpage
+\subsection{Edge computing}
+
+The new \acrfullr{5g} paradigm focuses on extending the capabilities of cloud computing to the border of the networks of the mobile operators. This allows for the creation of computer resources physically close 
+to the end-user, this is called \acrshort{mec}. The general architecture of these solutions can be seen in \autoref{fig:mec}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{./images/4/MEC.png}
+    \caption{General architecture of \acrshort{mec}\cite{MobileEdgeComputing}}
+    \label{fig:mec}
+\end{figure}
+
+There are already some companies offering \acrfullr{saas} solutions for edge computing, but there are open solutions that can be integrated in a edge node to create a middleware for the system. One of this 
+technologies is the \texttt{Thingsboard} platform. This platform allows for:
+\begin{itemize}
+    \item Device management.
+    \item Data aggregation.
+    \item Data collection.
+    \item Data processing.
+    \item Visualization solutions or piping to other services.
+    \item Intercommunication interfaces.
+    \item Scalability.
+    \item Integration with other useful technologies like \texttt{Kafka} for logs or \texttt{Node Red} for simulation of events.
+\end{itemize}
