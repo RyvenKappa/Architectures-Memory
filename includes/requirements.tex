@@ -1,1 +1,63 @@
 \section{Requirement Analysis}
+
+\subsection{Stakeholder Analysis}
+
+This project can affect several type of future users. This needs to be considered to stablish the scenarios the system will face. 
+
+\begin{itemize}
+    \item \textbf{Farmers}: The end users who will utilize the system to protect their crops and properties. The jobs these farmers carry out can differ, for example, one farmer can be the owner of the system 
+    and others can just be workers that also need to access the system.
+    \item \textbf{Maintenance Personnel}: If any problem appears, these users are responsible for maintaining the system and ensuring it's proper functioning.
+    \item \textbf{Equipment and Sensor Suppliers}: Companies that supply necessary components, such as \acrfullr{mcu}, smoke, flame or motion sensors.
+    \item \textbf{Internet Service Providers}: These companies supply the resources for edge computing and internet connectivity.
+    \item \textbf{Governmental and Regulatory Organizations}: Entities that ensure the system complies with agricultural and safety regulations.
+    \item \textbf{Agricultural Consultants}: Professionals who advise farmers on integrating and using the system in their agricultural practices.
+    \item \textbf{Energy Suppliers}: Companies that provide energy solutions, such as solar panels, to power the system.
+    \item \textbf{Local Community}: Neighbors and other local stakeholders who could indirectly benefit from the system's implementation.
+    \item \textbf{Investors and Financiers}: Entities or individuals who provide the necessary funds for the system's development and implementation.
+\end{itemize}
+
+\subsection{Functional Requirements}
+
+\subsection{Non-Functional Requirements}
+
+\subsection{Operation Domain Requirements}
+
+\todo[inline]{Falta lo que diga Renato al respecto}
+
+
+\clearpage
+\subsection{Quality attributes analysis and Impact analysis}
+
+\begin{itemize}
+    \item \textbf{Performance}:
+        \begin{itemize}
+            \item \textbf{Response time}: The system must process and respond to alerts in less than $1$ second.
+            \item \textbf{Processing capacity}: It must handle multiple simultaneous events without degrading performance.
+        \end{itemize}
+    \item \textbf{Reliability}:
+        \begin{itemize}
+            \item \textbf{Availability}: The system must be operational at least $99 \%$ of the time.
+            \item \textbf{Redundancy}: It must have backup mechanisms to ensure service continuity in case of failures.
+        \end{itemize}
+    \item \textbf{Security}:
+        \begin{itemize}
+            \item \textbf{Data protection}: All transmitted data must be encrypted.
+            \item \textbf{Controlled access}: Only authorized users should be able to access and control the system.
+        \end{itemize}
+    \item \textbf{Scalability}:
+        \begin{itemize}
+            \item \textbf{Sensor expansion}: It must allow the addition of new sensors and actuators without significant changes.
+            \item \textbf{User increase}: The system should support a growing number of users and connected devices. 
+        \end{itemize}
+    \item \textbf{Maintainability}:
+        \begin{itemize}
+            \item \textbf{Ease of updating}: The system must allow software updates without interrupting its operation.
+            \item \textbf{Documentation}: There must be clear and detailed documentation to facilitate maintenance.
+        \end{itemize}
+    \item \textbf{Usability}:
+        \begin{itemize}
+            \item \textbf{User-friendly interface}: The interface must be intuitive and easy to use for people without technical knowledge.
+            \item \textbf{Accessibility}: It must be accessible from different devices (mobile and computers).
+        \end{itemize}
+\end{itemize}
