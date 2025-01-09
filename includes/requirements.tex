@@ -1,5 +1,9 @@
 \section{Requirement Analysis}
 
+In this chapter, the requirement will be done to further divide the task for achieving the project. First, the identified 
+stakeholders help understand the possible users and external factors that can affect the development of the solution. With this, 
+the formal requirements are analyzed, and finally, quality attributed are specified for the validation of the system.
+
 \subsection{Stakeholder Analysis}
 
 This project can affect several type of future users. This needs to be considered to stablish the scenarios the system will face. 
@@ -101,6 +105,64 @@ This project can affect several type of future users. This needs to be considere
 \end{table}
 
 \subsection{Non-Functional Requirements}
+
+\begin{table}[H]
+    \begin{center}
+        \begin{tabular}{p{0.30\textwidth} |  p{0.30\textwidth} | p{0.30\textwidth} }
+            \hline
+            \multicolumn{1}{c |}{\textbf{ID}} & \multicolumn{1}{c |}{\textbf{Functional Requirement}} & \multicolumn{1}{c}{\textbf{Description}}\\
+            \hline
+            \makecell{NFR-PF-001} & \makecell{Performance} & \makecell{The system must process \\ and respond to sensor \\ signals in real-time, \\ with a maximum delay of \\ 1 second for critical actions}\\
+            \hline
+            \makecell{NFR-SC-001} & \makecell{Scalability} & \makecell{The system must be \\ scalable to support an \\ increased number of \\ sensors and actuators \\ in the future without \\ affecting performance}\\
+            \hline
+            \makecell{NFR-RE-001} & \makecell{Reliability} & \makecell{The system must have \\ high availability, with \\ downtime not exceeding \\ 1\% annually}\\
+            \hline
+            \makecell{NFR-RE-002} & \makecell{Reliability} & \makecell{Redundancy mechanisms \\ must be included to \\ ensure that alerts and \\ critical actions do not \\ fail}\\
+            \hline
+            \makecell{NFR-MAN-001} & \makecell{Maintainability} & \makecell{The system must be easy \\ to maintain and update \\ both in hardware and \\ software}\\
+            \hline
+            \makecell{NFR-MAN-002} & \makecell{Maintainability} & \makecell{Manuals and detailed \\ documentation must be \\ provided to facilitate \\ maintenance tasks}\\
+            \hline
+            \makecell{NFR-US-001} & \makecell{Usability} & \makecell{The user interface must be \\ intuitive and easy to \\ use with a minimal \\ learning curve}\\
+            \hline
+            \makecell{NFR-US-002} & \makecell{Usability} & \makecell{It must be accessible from \\ mobile devices, computers \\ and be available in \\ multiple languages if \\ necessary}\\
+            \hline
+            \makecell{NFR-SEC-001} & \makecell{Security} & \makecell{The system must include \\ secutrity measures to \\ protect user data \\ and privacy}\\
+            \hline
+            \makecell{NFR-SEC-001} & \makecell{Security} & \makecell{The system must include \\ secutrity measures to \\ protect user data \\ and privacy}\\
+            \hline
+        \end{tabular} 
+    \end{center}
+    \caption{Non-Functional Requirements 1}
+    \label{nonfunctionalReq1}
+\end{table}
+
+\begin{table}[H]
+    \begin{center}
+        \begin{tabular}{p{0.30\textwidth} |  p{0.30\textwidth} | p{0.30\textwidth} }
+            \hline
+            \multicolumn{1}{c |}{\textbf{ID}} & \multicolumn{1}{c |}{\textbf{Functional Requirement}} & \multicolumn{1}{c}{\textbf{Description}}\\
+            \hline
+            \makecell{NFR-SEC-002} & \makecell{Security} & \makecell{Data encryption must \\ be used for sensitive \\ data transmission and \\ authentication for user \\ interface access}\\
+            \hline
+            \makecell{NFR-COM-001} & \makecell{Compatibility} & \makecell{The system must be \\ compatible with various \\ types of sensors and \\ actuators available in \\ the market}\\
+            \hline
+            \makecell{NFR-COM-002} & \makecell{Compatibility} & \makecell{It must support different \\ communication protocols \\ with the nodes}\\
+            \hline
+            \makecell{NFR-EE-001} & \makecell{Energy Efficiency} & \makecell{The system must minimize \\ energy consumption, \\ especially if renewable \\ energy solutions such \\ as solar panels \\ are used}\\
+            \hline
+            \makecell{NFR-EE-002} & \makecell{Energy Efficiency} & \makecell{Components must enter \\ low-power mode when \\ not actively in use}\\
+            \hline
+            \makecell{NFR-POR-002} & \makecell{Portability} & \makecell{The system software must \\ be portable and able to \\ run on different \\ platforms and devices \\ without significant \\ modifications}\\
+            \hline
+            \makecell{NFR-LC-001} & \makecell{Legality and \\ Compliance} & \makecell{The system must comply \\ international regulations \\ and standards regarding \\ agriculture, security, and \\ privacy}\\
+            \hline
+        \end{tabular} 
+    \end{center}
+    \caption{Non-Functional Requirements 2}
+    \label{nonfunctionalReq2}
+\end{table}
 
 \subsection{Operation Domain Requirements}
 
