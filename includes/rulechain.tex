@@ -1,4 +1,4 @@
-\section{Rule Chains}
+\subsection{Rule Chains}
 In this project, two distinct nodes were developed, each with its specific characteristics. On one hand, we have a node equipped with sensors for presence detection, 
 periodic measurements of temperature, humidity, wind, smoke, and flame detection via infrared sensors, located at the perimeter of the field. On the other hand, a 
 simpler node equipped with an accelerometer is placed on the fence delimiting the crop field to detect potential unauthorized crossings. For each of these nodes,
@@ -41,7 +41,7 @@ Additionally, a smoke concentration exceeding 200 ppm triggers the alarm. If non
 For presence detection, four PIR nodes are placed at each vertex of the square representing the crop field. The field is divided into four zones corresponding to each side 
 of the polygon. The presence detection algorithm works as follows:
 \begin{itemize}
-    \item If a presence is detected by a PIR sensor (indicated by 'pir_XX_detection', where XX can be 'left' or 'right'):
+    \item If a presence is detected by a PIR sensor (indicated by 'pir\_XX\_detection', where XX can be 'left' or 'right'):
     \begin{itemize}
         \item The status of the opposite side’s neighboring node is checked.
         \item If the neighboring node also reports presence ('true') within a timespan of 10 seconds, the "Presence Detected" alarm is triggered, and a speaker is activated.
@@ -52,15 +52,15 @@ of the polygon. The presence detection algorithm works as follows:
 
 The pseudocode for this logic is as follows:
 \todo[inline]{METER CÓDIGO FORMATEADO}
-if (presence on one side):
-    if (presence on opposite-side neighbor node && ts < 10):
-        Presence Detected
-        Activate Speaker
-    else:
-        Presence Detected on the corresponding side
-else:
-    Deactivate all presence alarms
-
+%if (presence on one side):
+%    if (presence on opposite-side neighbor node && ts < 10):
+%        Presence Detected
+%        Activate Speaker
+%    else:
+%        Presence Detected on the corresponding side
+%else:
+%    Deactivate all presence alarms
+%
 To implement this algorithm, relationships between the various nodes and assets were defined. Accessing values from neighboring nodes was achieved through the Change
 Originator node in Thingsboard, which specifies the target node using the predefined relationships. Similarly, the originator change process is used to update related 
 asset values. The full flow of the Rule Chain is illustrated in \autoref{fig:PirNodeAnalyzer}.
@@ -75,7 +75,7 @@ asset values. The full flow of the Rule Chain is illustrated in \autoref{fig:Pir
 \subsection{Fence Node Analyzer}
 This Rule Chain is designed to process messages from nodes placed on the fence to detect movements and generate alarms accordingly.  
 Similar to the previous Rule Chain, it first validates that all required fields are present in the incoming message. However, since this node is simpler, the Rule 
-Chain specifically generates the "Fence Trespassed" alarm based on the value of the 'acceleration_interruption' field. The flow of this process is illustrated in \autoref{fig:FenceNodeAnalyzer}.
+Chain specifically generates the "Fence Trespassed" alarm based on the value of the 'acceleration\_interruption' field. The flow of this process is illustrated in \autoref{fig:FenceNodeAnalyzer}.
 
 \begin{figure}[H]
     \centering
