@@ -146,6 +146,29 @@ Chain specifically generates the "Fence Trespassed" alarm based on the value of 
     \label{fig:FenceNodeAnalyzer}
 \end{figure}
 
-\subsubsection*{Alarms}
-
 \subsubsection*{Dashboard}
+
+To represent all the information generated during the processing of the aggregated data. The dashboard 
+functionality from ThingsBoard was used. To implement the dashboard utilities like aliases and dashboard 
+states were used.
+
+The dashboard defined 2 views implemented with states:
+\begin{itemize}
+    \item The map dashboard, that shows the status of the farm perimeter and the different PIR nodes. This map can also change colors in reaction 
+    to some events, like presence detection or fire detection. This also affects the markers of the nodes. Finally, the nodes can be clicked to obtain 
+    a summarized view of the state of the node and the latest telemetry. This view is presented in \autoref{fig:MapThingsboard}.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth]{./images/8/MapDashboard.png}
+        \caption{Map dashboard implemented in Thingsboard}
+        \label{fig:MapThingsboard}
+    \end{figure}
+    \item When any tooltip's "further details" is clicked, the dashboard changes to the sensor view of the sensor clicked. This dashboard 
+    shows time series data and further details about the state of the sensor. This view is presented in \autoref{fig:NodeThingsboard}. 
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth]{./images/8/NodeDashboard.png}
+        \caption{Node dashboard implemented in Thingsboard}
+        \label{fig:NodeThingsboard}
+    \end{figure}
+\end{itemize}
