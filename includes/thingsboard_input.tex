@@ -1,10 +1,53 @@
+\subsubsection*{Devices and Assets}
+To manage the information from all the sensors, actuators, and elements involved in this system within the Thingsboard platform, we utilize virtual representations of 
+these components through Devices and Assets. Devices represent each node virtually, while assets represent the corresponding physical elements. For our use cases, we 
+distinguish between two types of nodes, each with its own device profile, and define one asset type as listed below:
+\begin{itemize}
+    \item PIR Node Profile. This Device Profile corresponds to nodes equipped with sensors for presence detection, periodic measurements of temperature, humidity, 
+    wind, smoke, and flame detection via infrared sensors. These nodes are positioned along the perimeter of the field. The PIR Node features:
+    \begin{itemize}
+        \item 2 PIR Sensors.
+        \item 2 Infrared Sensors.
+        \item Temperature and Humidity Sensor.
+        \item Soil moisture Sensor.
+        \item Wind Speed Sensor.
+        \item GPS Module.
+    \end{itemize}
+    \item Fence Node Profile. This Device Profile refers to a simpler node equipped with an accelerometer, placed on the fence surrounding the crop field to detect 
+    potential unauthorized crossings. The Fence Node contains:
+    \begin{itemize}
+        \item Accelerometer.
+    \end{itemize}
+    \item Presence Asset Profile. This Asset Profile indicates real-time presence detection for each fence section. It differentiates between a presence detected on 
+    a single side, multiple detections, or a possible unauthorized crossing.
+\end{itemize}
+For this project, and considering the specified constraints, we deployed a total of 8 devices to cover the perimeter of the crop field—4 devices for each defined Device 
+Profile. Additionally, we defined 4 assets using the Presence Asset Profile type, representing the presence detected by each fence segment. \autoref{fig:NodesSchematic} provides a schematic 
+representation of the nodes and assets placement.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{./images/8/NodesSchematic.PNG}
+    \caption{Node Schema}
+    \label{fig:NodesSchematic}
+\end{figure}
+
+To detect presence or crossings effectively, the PIR Node Devices are configured with relationships to two neighboring PIR Nodes and two defined assets. These relationships 
+are as follows (the terms left and right are oriented outward from the crop field):
+\begin{itemize}
+    \item (\texttt{leftneighbour}): Links a PIR Node to the PIR Node located to its left.
+    \item (\texttt{rightneighbour}): Links a PIR Node to the PIR Node located to its right.
+    \item (\texttt{leftpresence}): Links a PIR Node to the Presence Asset on its left side.
+    \item (\texttt{rightpresence}): Links a PIR Node to the Presence Asset on its right side.
+    \item (\texttt{features}): Links a Fence Node to the Presence Asset associated with its section.
+\end{itemize}
+By leveraging these relationships, the system can monitor detected presences, determine which side of the field they occur on, and generate appropriate alarms accordingly. 
+Therefore, the relationships for each node, based on the previous diagram, would be as indicated below:
+
+
+
 \subsubsection*{Rule Chains}
-\todo[]{Habría que meter la relación entre nodos con algún pequeño diagrama}
-In this project, two distinct nodes were developed, each with its specific characteristics. On one hand, we have a node equipped with sensors for presence detection, 
-periodic measurements of temperature, humidity, wind, smoke, and flame detection via infrared sensors, located at the perimeter of the field. On the other hand, a 
-simpler node equipped with an accelerometer is placed on the fence delimiting the crop field to detect potential unauthorized crossings. For each of these nodes,
-two Device Profiles were defined in Thingsboard: "PIR Node Profile" and "Fence Node Profile". Each profile is assigned a specific Rule Chain to analyze the data 
-received from the devices and trigger the corresponding alarms.
+In this project, two distinct nodes were developed, each with its specific characteristics. On one hand, we have the PIR node and on the other hand, the fence node. 
+Each device profile is assigned a specific Rule Chain to analyze the data received from the node devices and trigger the corresponding alarms.
 
 
 \subsubsection*{PIR Node Analyzer}
