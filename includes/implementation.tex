@@ -260,23 +260,74 @@ To represent all the information generated during the processing of the aggregat
 functionality from ThingsBoard was used. To implement the dashboard utilities like aliases and dashboard 
 states were used.
 
-The dashboard defined 2 views implemented with states:
+The dashboard has 2 views, which were implemented using ThingsBoard states:
 \begin{itemize}
     \item The map dashboard, that shows the status of the farm perimeter and the different PIR nodes. This map can also change colors in reaction 
     to some events, like presence detection or fire detection. This also affects the markers of the nodes. Finally, the nodes can be clicked to obtain 
     a summarized view of the state of the node and the latest telemetry. This view is presented in \autoref{fig:MapThingsboard}.
+
+    This  view also contains extra elements:
+    \begin{itemize}
+        \item A Alarm table in which the alarms related to the whole system are presented.
+        \item A set of buttons to command the start/stop of the sending mechanisms for the PIR nodes. This can be used in case a worker needs to clean the perimeter.
+    \end{itemize}
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\textwidth]{./images/8/MapDashboard.png}
         \caption{Map dashboard implemented in Thingsboard}
         \label{fig:MapThingsboard}
     \end{figure}
+    \clearpage
     \item When any tooltip's "further details" is clicked, the dashboard changes to the sensor view of the sensor clicked. This dashboard 
     shows time series data and further details about the state of the sensor. This view is presented in \autoref{fig:NodeThingsboard}. 
+
+    In this case, this view will only show alarms related to the status of that specific device, like battery alarms or presence on only 1 side.
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\textwidth]{./images/8/NodeDashboard.png}
         \caption{Node dashboard implemented in Thingsboard}
         \label{fig:NodeThingsboard}
     \end{figure}
+\end{itemize}
+
+\clearpage
+\subsection{Commanding the network}
+
+The possibility of network commanding is one of the key objectives of this project. This was implemented using the \acrfullr{rpc} capabilities of ThingsBoard. 
+In this case the implementation of \acrshort{rpc} is done by sending a JSON in a MQTT topic and waiting for a response in another topic.
+
+The commanding has two parts:
+\begin{itemize}
+    \item An automatic commanding which is used when an animal is presented by a node. When all the information is processed in the edge, a response is 
+    generated and the edge platform command the node to activate the smart speaker to scare the animal. The format of this \acrshort{rpc} is as follows:
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{./images/8/speaker.png}
+        \caption{Automatic speaker RPC}
+        \label{fig:speakerRPC}
+    \end{figure}
+    \item A manual commanding which is for turning off and on the sensing capabilities of the PIR nodes. This is implemented with two \acrshort{rpc}s, as the edge 
+    platform needs to know before hand the state in which the node it's configured. The calls can be seen in the next figures:
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{./images/8/getStateRPC.png}
+        \caption{GetState RPC}
+        \label{fig:getStateRPC}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{./images/8/getStateRPCResponse.png}
+        \caption{GetState RPC Response}
+        \label{fig:getStateRPCResponse}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{./images/8/setState.png}
+        \caption{SetState RPC}
+        \label{fig:setStateRPC}
+    \end{figure}
+
 \end{itemize}
