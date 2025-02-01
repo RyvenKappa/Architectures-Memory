@@ -4,20 +4,20 @@ The FarmRisk system can be divided considering the main two risks presented befo
 
 \begin{itemize}
     \item The risk of fire hazards in the vicinities of the farm need to be detected, in order to ensure save operations. To do this, fire and smoke sensors are used to detect early signs of fire. This data will be 
-    sent to the middleware and a decision system will infer the presence of fire. If any fire is detected, the farmer will be notified, indicating the proximity and the location of 
+    sent to the middleware and to a decision system that will infer the presence of fire. If any fire is detected, the farmer will be notified, indicating the proximity and the location of 
     the detection.
     \item Secondly, if any signs of wild animal presence are detected near the limits of the farm, information will be sent to the edge platform. This information will be used to decide the possible actuator execution. 
-    If it is decided that an animal has been detected, it will be notified to the user. To detect this presence, sensors of presence and accelerometers are used, this allows for the coverage of bigger distances without the 
+    If it is decided that an animal has been detected, it will be notified to the user and a smart speaker will be activated in the node. To detect this presence, sensors of presence and accelerometers are used, this allows for the coverage of bigger distances without the 
     need of extra budget.
 \end{itemize}
 
-To integrate all the sensing of the farm's border, an specific node connects all the sensors and is in charge of sending information to the communications gateway. This sensor will be placed every $50m$ in the border.
+To integrate all the sensing of the farm's perimeter, an specific node integrates all the sensor's information and is in charge of sending the information to the communications gateway. This sensor will be placed every $50m$ in the perimeter.
 
-This information will be forwarded to the edge computing platform., implemented using Thingsboard. When the data arrives, it is processed (while being logged) in order to determine possible actions or alarms that need to be 
+This information will be forwarded to the edge computing platform, implemented using Thingsboard. When the data arrives, it is processed (while being logged) in order to determine possible actions or alarms that need to be 
 executed.
 
-The edge computing platform will also communicate with a system that allows for weather condition information, using the \texttt{AEMET API}\cite{AEMETOpenDataAgencia}. This information will be used to determine possible 
-fire risks in near future, notifying the farmer that soil moisture need to be improved.
+All this situations and alarms are logged in a knowledge extraction database separated from the main edge platform. This information can be used to apply statistical learning over temporal data. 
+This can be usedto create future solutions based on artificial intelligence.
 
 Finally, the system will allow the possibility of two type of users: admin or worker. The worker will only be able to receive alerts and see the current status of the system, while the admin user will be able to command the 
 network, stopping the alert system, responding to alerts, etc.
