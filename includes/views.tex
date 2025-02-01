@@ -10,7 +10,7 @@ deployment designs will be presented.
 
 All this designing will be based on the Kruchten’s 4+1 views model\cite{ArchitecturalBlueprints4+1}.
 
-\subsection{Scenarios view: Use case analysis}
+\subsection{Scenarios view: Use case diagrams}
 
 Use case diagrams are used to represent all the possible scenarios that implement the functionalities specified.
 
@@ -169,7 +169,7 @@ For each subsystem use case analysis, a detailed description can be found with:
 \end{itemize}
 
 \clearpage
-\subsection{Logical view: Class Diagrams}
+\subsection{Logical view: Class diagram}
 
 In this section the class diagram for the \acrshort{pir} sensor node is presented.
 
@@ -179,7 +179,7 @@ In this section the class diagram for the \acrshort{pir} sensor node is presente
     \caption{Presence detected sequence diagram}
 \end{figure}
 
-\subsection{Process view: Sequence Diagrams}
+\subsection{Process view: Sequence diagrams}
 
 Sequence diagrams are used in this project to represent the flow of the system in a selected use case. This view is used 
 to achieve implementation by representing the expected steps to integrate a functionality.
@@ -216,3 +216,19 @@ to achieve implementation by representing the expected steps to integrate a func
     \caption{Send command from mobile app sequence diagram}
 \end{figure}
 
+\clearpage
+\subsection{Implementation view: Component diagram}
+\todo[inline]{METER EL DIAGRAMA DE COMPONENTES}
+
+\clearpage
+\subsection{Deployment diagram}
+
+The diagram in \autoref{fig:DeploymentDiagram} shows the node distribution in the system. It also shows the 
+different connection protocols used between them.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{./images/6/Deployment.png}
+    \caption{Deployment diagram for the system}
+    \label{fig:DeploymentDiagram}
+\end{figure}
