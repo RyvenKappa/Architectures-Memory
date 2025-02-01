@@ -1,18 +1,19 @@
 \section{Project Scope}
 This project addresses multiple use cases on a farm, which will be detailed in the following chapters through UML diagrams and a 
-Project Requirement Analysis. However, due to time and resource constraints, it is not feasible to implement the entire project 
-with all its functionalities. Consequently, the project will incorporate both real and simulated hardware.
+Project Requirement Analysis. However, due to time and resource constraints, it wasn't feasible to implement the entire project 
+with all its functionalities. Consequently, the project incorporates both real and simulated hardware.
 
-A real embedded system will be developed, equipped with PIR sensors for presence detection, accelerometers to monitor movements on
-the crop field fences, soil moisture sensors to assess dryness levels, and a GPS module to provide information about the device’s current location.
-
-Additionally, real meteorological data will be obtained through requests to the WeatherCast API [], enabling the analysis of wildfire probabilities in the monitored area.
+A real embedded system was developed, equipped with PIR sensors for presence detection, accelerometers to monitor movements on
+the crop field fences, smoke sensors to detect will fires close to the system, and a GPS module to provide information about the device’s current location.
 
 To complement this, the system will simulate hardware responsible for fire detection. By using software simulations of fire detection
 sensors, combined with data on climatic conditions and physical soil factors, it will be possible to validate alerts generated in response
 to potential wildfire risks or active fire detections.
 
 Due to the project’s limitations and scope, the proof of concept will be conducted on a small scale, focusing on achieving the course objectives.
-These objectives will be addressed by utilizing both real and simulated hardware, where periodic events will be sent regarding soil and weather conditions,
-as well as sporadic events in the event of potential animal detection via the PIR sensor or accelerometers on the fences.  Moreover, the project will
+These objectives will be addressed by utilizing both real and simulated hardware, where periodic events will be sent regarding sensed conditions,
+as well as sporadic events in the event of potential animal detection via the PIR sensor or accelerometers on the fences. Moreover, the project will
 include alarm systems to detect animal presence, imminent wildfire risks, or the occurrence of an active fire. This approach ensures the main goals of the course are met.
+
+Finally, as an extra objective for this project, a mobile application was designed to enhance the usability of the system and to inform users as fast as possible 
+in case any event appears.
