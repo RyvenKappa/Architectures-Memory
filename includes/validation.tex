@@ -1,1 +1,15 @@
 \section{Validation}
+
+This section wants to present the efforts applies to ensure the complete functionality of the system as a whole.
+
+First, a validation process was followed for each expected functionality. First, a set of independent component validations was made:
+
+\begin{enumerate}
+    \item The validation of the nodes, both from the expected information sent to the edge platform and to ensure complete RPC integration.
+    \item The validation of the edge platform, mainly focused on the rule chains. This was done first without the nodes or node-red connected. Then, a constant flow of events 
+        was introduced in the system in order to check the correct functionality.
+    \item The validation of the mobile application involved cross-validation both in the rule chains and the events that appear on the app.
+    \item Lastly, a validation of the information sent to the knowledge base was done.
+\end{enumerate}
+
+Finally, an integration validation was done, were all the nodes were sending events and different users were interacting with the system, both from the dashboard and the mobile application.
