@@ -331,3 +331,195 @@ The commanding has two parts:
     \end{figure}
 
 \end{itemize}
+
+\clearpage
+\subsection{Mobile Application}
+
+For this project an application was designed to integrate an easy to use interface.
+
+The application has a \acrfullr{mvvm} with clean architecture, in this way the application has three main layers for the separation of functionalities, facilitating maintenance, scalability and testing of the application. The general system is presented in \autoref{fig:mobileArch}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{./images/8/Diagrama.jpg}
+    \caption{General architecture for the mobile application}
+    \label{fig:mobileArch}
+\end{figure}
+
+\begin{itemize}
+    \item \textbf{Model}: This layer is responsible for managing data from external sources such as APIs or local databases, as well as transforming and storing them. It will apply the business rules that are established and will be the provider of the necessary data to the ViewModel layer.
+    \item \textbf{View}: The View layer is responsible for presenting all the graphic elements, for data visualization, interaction with the user and adapting to changes in the data provided by the ViewModel. 
+    \item \textbf{ViewModel}: The View layer is responsible for presenting all the graphic elements, for data visualization, interaction with the user and adapting to changes in the data provided by the ViewModel. 
+\end{itemize}
+
+\subsubsection*{App development}
+In the development of the app, a clear separation of responsibilities between business logic, user interface and data management 
+has been ensured by using the architecture mentioned above. This decision has implied the need to use dependency injection, and for this, Hilt has been used, 
+a tool that facilitates the management and provision of dependencies in an efficient manner. 
+Throughout the next sections, the classes and methods developed will be detailed, encompassing the main functions of the application.
+
+\clearpage
+The app was built with a set of dependencies that help achieve our desired functionalities:
+\begin{itemize}
+    \item \textbf{Dagger Hilt}: A dependency injection library for Android, built on top of Dagger. 
+    It simplifies the process of managing dependencies and promotes modular, testable code by automating 
+    the injection of objects into various parts of an Android application.
+    \item \textbf{Retrofit}: A type-safe HTTP client for Android and Java. It makes it easy to interact with REST 
+    APIs by converting API responses into Java objects, handling network requests, and providing a convenient 
+    interface for dealing with asynchronous operations.
+    \item \textbf{HiveMQTT}: A type-safe HTTP client for Android and Java. It makes it easy to interact with REST APIs 
+    by converting API responses into Java objects, handling network requests, and providing a convenient interface for 
+    dealing with asynchronous operations.
+\end{itemize}
+
+In the case of the usage of \texttt{Hilt}, the application uses four key modules for efficient dependency management and 
+communication with the services:
+\begin{itemize}
+    \item \textbf{ApiServiceModule}: A type-safe HTTP client for Android and Java. It makes it easy to interact with REST APIs by converting API responses into Java objects, handling network requests, and providing a convenient interface for dealing with asynchronous operations.
+    \item \textbf{DatabaseModule}: Manages the local database. Provides the database instance, as well as access to the necessary data access objects.
+    \item \textbf{MqttModule}: Configures and provides an asynchronous MQTT client for real-time communication with the MQTT broker. The HiveMQ library is used to establish connections and manage subscriptions and messages. 
+    \item \textbf{RetrofitModule}: Configures and provides an instance of Retrofit, enabling HTTP communication, as well as integrating Gson for handling data in JSON format. 
+\end{itemize}
+
+For the \texttt{RetroFit} library, it was used to make API calls to Thingsboard. Out application is based around the next calls:
+\begin{itemize}
+    \item \textbf{/api/auth/login}: User credentials are sent to obtain the access token.
+    \item \textbf{/api/auth/token}: When the access token has expired, this call is used to refresh the access token.
+    \item \textbf{/api/tenant/deviceInfos}: Retrieves a list of registered devices, filtered by deviceProfileId. 
+    \item \textbf{/api/plugins/telemetry/DEVICE/{deviceId}/values/timeseries}: This endpoint is used to obtain telemetry data from each of the devices identified by their deviceId.
+    \item \textbf{/api/alarms}: Gets a list of active alarms on ThingsBoard. 
+    \item \textbf{/api/rpc/oneway/{deviceId}}: This endpoint is used to send an RPC command to a device identified by its deviceId.
+\end{itemize}
+
+\clearpage
+Finally, MQTT communication has been established with the free public broker offered by the HiveMQ platform itself so that users can share the status of the farm, 
+and users who are close can be informed of any incident in real time.
+To do this, we use the MQTT client library, which offers functions to connect to the broker, publish messages, subscribe to topics and unsubscribe from them.
+The MQTT repository is responsible for managing all these functionalities. The following topics have been used to receive notifications sent from the ThingsBoard:
+
+\begin{itemize}
+    \item \textbf{UPM/MIoT/ARS/RiskSystem/alarms/PresenceDetected}: Receive notifications about presence detection in the fence area.
+    \item \textbf{UPM/MIoT/ARS/RiskSystem/alarms/FireHazard}: Receive alerts in case of fire risk in the area.
+    \item \textbf{UPM/MIoT/ARS/RiskSystem/alarms/FireDetected}: Triggered when a fire is confirmed near a device.
+    \item \textbf{UPM/MIoT/ARS/RiskSystem/alarms/LowBattery}: This notification is received when a device has a low battery.
+    \item \textbf{UPM/MIoT/ARS/RiskSystem/alarms/FenceTrespassed}: Received when an animal has breached the fence.
+    \item \textbf{UPM/MIoT/ARS/RiskSystem/alarms/NodePresenceDetected}: Triggered if an animal is near the device.
+\end{itemize}
+\clearpage
+\subsubsection*{Screen design and flows}
+
+This section specifies the design and flow of the application. The focus was for the user to have an easy interaction and understanding of what's happening in the farm.
+\begin{enumerate}
+    \item The user is prompted with a request for location permissions. If those are not accepted, the user won't be able to move to the login screen. 
+    \item On the login screen, the user will be prompted to login with the same credentials as the one used in the ThingsBoard platform. This functionality can be seen in \autoref{fig:login}.
+        \begin{figure}[H]
+            \centering
+            \begin{subfigure}[t]{0.3\textwidth}
+                \centering
+                \includegraphics[width=0.882\textwidth]{images/8/01.png}
+                \caption{Login screen of the app}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.281\textwidth}
+                \centering
+                \includegraphics[width=0.95\textwidth]{images/8/02.png}
+                \caption{User input for the login}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.281\textwidth}
+                \centering
+                \includegraphics[width=0.95\textwidth]{images/8/02.png}
+                \caption{Error checking in login}
+            \end{subfigure}
+            \caption{Login screen flow}
+            \label{fig:login}
+        \end{figure}
+    \item Once successfully logged in, the main screen of the application loads. 
+    It consists of a map with the points corresponding to our PIR devices and a delineated area 
+    representing the field to be protected. 
+    Additionally, there are two buttons: the first one, with a bell icon, will take us to the alarms screen; 
+    the second button will disable the devices so they stop collecting information. 
+
+    Additionally, clicking on a device on the map will display the following information: Node name, 
+    Latitude and Longitude, Temperature, Battery level, Smoke concentration, and Wind speed. 
+    This device information updates every 10 seconds.
+
+    All this flow can be seen in \autoref{fig:MainScreen}.
+
+        \begin{figure}[H]
+            \centering
+            \begin{subfigure}[t]{0.4\textwidth}
+                \centering
+                \includegraphics[width=0.882\textwidth]{images/8/04.png}
+                \caption{General map view}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.3705\textwidth}
+                \centering
+                \includegraphics[width=0.95\textwidth]{images/8/05.png}
+                \caption{Device click tooltip}
+            \end{subfigure}
+            \caption{Main screen of the application}
+            \label{fig:MainScreen}
+        \end{figure}
+    \item As mentioned above, clicking the first button takes the user to a new screen that will display 
+    a list of active alarms found on ThingsBoard. It is presented in \autoref{fig:alarmScreen}.
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.33\textwidth]{./images/8/06.png}
+            \caption{Active alarms list screen}
+            \label{fig:alarmScreen}
+        \end{figure}
+    \item The second button of the main screen is used to make an RPC call to ThingsBoard to enable or disable the devices. The usage can be seen in \autoref{fig:appDisableNodes}.
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.33\textwidth]{./images/8/07.png}
+            \caption{Node disabling from the application}
+            \label{fig:appDisableNodes}
+        \end{figure}
+    
+    \item Finally, one of the features of the mobile app is the reception of notifications sent from ThingsBoard. all notifications, when received display a dialog, 
+    activate an audible and vibrating alert on the mobile device, as well as making changes to the map screen. The notifications implemented are:
+    \begin{itemize}
+        \item Presence Notification: This notification will display a dialog with the following message: "Animal presence alert in the area" and will mark the affected area on the map in red.
+        \item Fire hazard notification: This notification only display a dialog with the following message: "Attention fire hazard".
+        \item Fire detected notification: This notification will display a dialog with the following message: "A fire has been detected on the device (Name of the device)" and a flame icon is displayed on the map.
+        \item Battery notification: This notification only display a dialog with the following message: "The device (Device name) has low battery".
+        \item Fence Notification: This notification will display a dialog with the following message: "The fence has been trespassed in (Device name)" and will mark the affected area on the map in yellow.
+        \item Presence notification: This notification will display a dialog with the following message: " Alert of animal presence near the device (Device name)" and a attention animal icon is displayed on the map.
+    \end{itemize}
+
+    All these notifications are presented in \autoref{fig:AppNotifications}.
+        \begin{figure}[H]
+            \centering
+            \begin{subfigure}[t]{0.3\textwidth}
+                \centering
+                \includegraphics[width=0.95\textwidth]{images/8/08.png}
+                \caption{Presence Notification}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.3\textwidth}
+                \centering
+                \includegraphics[width=0.95\textwidth]{images/8/10.png}
+                \caption{Fire hazard notification}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.3\textwidth}
+                \centering
+                \includegraphics[width=0.95\textwidth]{images/8/11.png}
+                \caption{Fire detected notification}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.3\textwidth}
+                \centering
+                \includegraphics[width=0.95\textwidth]{images/8/13.png}
+                \caption{Low battery notification}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.3\textwidth}
+                \centering
+                \includegraphics[width=0.95\textwidth]{images/8/14.png}
+                \caption{Fence notification}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.3\textwidth}
+                \centering
+                \includegraphics[width=0.95\textwidth]{images/8/17.png}
+                \caption{Presence near notification}
+            \end{subfigure}
+            \caption{Set of notifications of the application}
+            \label{fig:AppNotifications}
+        \end{figure}
+\end{enumerate}
