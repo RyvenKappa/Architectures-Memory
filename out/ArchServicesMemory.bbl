@@ -1,0 +1,800 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Yanosolo}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b8c1e4a7a402e3c7de445f70f8384d0e}{%
+           family={Burgos},
+           familyi={B\bibinitperiod},
+           given={Diario},
+           giveni={D\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{b8c1e4a7a402e3c7de445f70f8384d0e}
+      \strng{fullhash}{b8c1e4a7a402e3c7de445f70f8384d0e}
+      \strng{bibnamehash}{b8c1e4a7a402e3c7de445f70f8384d0e}
+      \strng{authorbibnamehash}{b8c1e4a7a402e3c7de445f70f8384d0e}
+      \strng{authornamehash}{b8c1e4a7a402e3c7de445f70f8384d0e}
+      \strng{authorfullhash}{b8c1e4a7a402e3c7de445f70f8384d0e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{"{¿}Qué vamos a hacer?", se preguntan desolados los vecinos de las áreas afectadas por los dos grandes incendios de Zamora}
+      \field{journaltitle}{Diario de Burgos}
+      \field{langid}{spanish}
+      \field{month}{7}
+      \field{title}{{"Ya no solo es vaciada, ahora estamos en la España quemada"}}
+      \field{urlday}{30}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.diariodeburgos.es/noticia/z471df8f0-fcd1-f8ef-5d505495c8c2856f/202207/ya-no-solo-es-vaciada-ahora-estamos-en-la-espana-quemada
+      \endverb
+      \verb{url}
+      \verb https://www.diariodeburgos.es/noticia/z471df8f0-fcd1-f8ef-5d505495c8c2856f/202207/ya-no-solo-es-vaciada-ahora-estamos-en-la-espana-quemada
+      \endverb
+    \endentry
+    \entry{importanciacazaEspana}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=12c4966e5d9360b0fba75c23060cc522}{%
+           family={Arce},
+           familyi={A\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{12c4966e5d9360b0fba75c23060cc522}
+      \strng{fullhash}{12c4966e5d9360b0fba75c23060cc522}
+      \strng{bibnamehash}{12c4966e5d9360b0fba75c23060cc522}
+      \strng{authorbibnamehash}{12c4966e5d9360b0fba75c23060cc522}
+      \strng{authornamehash}{12c4966e5d9360b0fba75c23060cc522}
+      \strng{authorfullhash}{12c4966e5d9360b0fba75c23060cc522}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{En este artículo analizamos el impacto de la actividad cinegética en el mundo rural. En cuanto a la caza como motor económico debemos destacar que se trata de una actividad que genera al año 186.750 puestos de trabajo con un impacto equivalente al 0,3\% del PIB anual.}
+      \field{journaltitle}{Revista Jara y Sedal}
+      \field{langid}{spanish}
+      \field{month}{4}
+      \field{shorttitle}{{La importancia de la caza en la España vaciada}}
+      \field{title}{{La importancia de la caza en la España vaciada: una actividad que genera 186.750 puestos de trabajo}}
+      \field{urlday}{30}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://revistajaraysedal.es/importancia-caza-espana-vaciada/
+      \endverb
+      \verb{url}
+      \verb https://revistajaraysedal.es/importancia-caza-espana-vaciada/
+      \endverb
+    \endentry
+    \entry{PDFWildAnimals}{article}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{abstract}{PDF {|} Crop damage caused by animal attacks is one of the major threats in reducing the crop yield. Due to the expansion of cultivated land into previous... {|} Find, read and cite all the research you need on ResearchGate}
+      \field{journaltitle}{ResearchGate}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{title}{({{PDF}}) {{Wild Animals Intrusion Detection}} Using {{Deep Learning Techniques}}}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.31838/ijpr/2020.12.04.164
+      \endverb
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/344387269_Wild_Animals_Intrusion_Detection_using_Deep_Learning_Techniques
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/344387269_Wild_Animals_Intrusion_Detection_using_Deep_Learning_Techniques
+      \endverb
+    \endentry
+    \entry{WildAnimalDetection}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b1d92f0c8a926539d70478715d392976}{%
+           family={Dave},
+           familyi={D\bibinitperiod},
+           given={Brahm},
+           giveni={B\bibinitperiod}}}%
+        {{hash=169258832cbc02ff2dc14c4c1179e41e}{%
+           family={Mori},
+           familyi={M\bibinitperiod},
+           given={Meet},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3efb677cca8ed1a9e494a104a52e455c}{%
+           family={Bathani},
+           familyi={B\bibinitperiod},
+           given={Anurag},
+           giveni={A\bibinitperiod}}}%
+        {{hash=df536310b737bfe2e2abc229ca71aac6}{%
+           family={Goel},
+           familyi={G\bibinitperiod},
+           given={Parth},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{39a034513e2bd1d11cdc386b4d89c7cf}
+      \strng{fullhash}{00edb83ad5bdba418c0c8ca5df3d2600}
+      \strng{bibnamehash}{00edb83ad5bdba418c0c8ca5df3d2600}
+      \strng{authorbibnamehash}{00edb83ad5bdba418c0c8ca5df3d2600}
+      \strng{authornamehash}{39a034513e2bd1d11cdc386b4d89c7cf}
+      \strng{authorfullhash}{00edb83ad5bdba418c0c8ca5df3d2600}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{People residing on the outskirts of forests encounter numerous challenges in their daily lives due to conflicts between humans and wild animals. This conflict has resulted in the loss of lives among both the local population and farmers, as well as substantial livestock casualties. The Gujarat Forest Department has reported that 12 individuals have lost their lives, 70 have been injured, and 3927 cattle have been killed. To address this conflict, various government initiatives have been implemented to track and monitor wild animals. This paper presents a deep learning-based model to track wild animals in real-time from camera footage. In this study, we propose the utilization of the YOLOv8 architecture to detect four distinct categories: Lions, Tigers, Leopards, and Bears. The dataset is constructed from various documentaries, YouTube videos, and existing datasets from Kaggle. This dataset contains 1619 images with annotated four categories of objects. We trained three different YOLOv8 architectures (medium - YOLOv8m, large - YOLOv8l, and extra-large - YOLOv8x) on our dataset. To improve the accuracy of our model, we applied various types of augmentation to the dataset images. The trained extra-large model achieved a mAP of 94.3\%, demonstrating its effectiveness in detecting wild animals in real time at 20 FPS.}
+      \field{issn}{1877-0509}
+      \field{journaltitle}{Procedia Computer Science}
+      \field{month}{1}
+      \field{series}{3rd {{International Conference}} on {{Evolutionary Computing}} and {{Mobile Sustainable Networks}} ({{ICECMSN}} 2023)}
+      \field{title}{Wild {{Animal Detection}} Using {{YOLOv8}}}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{volume}{230}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{100\bibrangedash 111}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.procs.2023.12.065
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1877050923020707
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1877050923020707
+      \endverb
+      \keyw{Convolutional neural networks,Deep learning,Object detection,Wild animal detection,Yolov8}
+    \endentry
+    \entry{StudyMethodsAnimal}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f111bf465d26bb4a893b913b9e5242c4}{%
+           family={Hp},
+           familyi={H\bibinitperiod},
+           given={Tejashwini\bibnamedelima Rathod},
+           giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{f111bf465d26bb4a893b913b9e5242c4}
+      \strng{fullhash}{f111bf465d26bb4a893b913b9e5242c4}
+      \strng{bibnamehash}{f111bf465d26bb4a893b913b9e5242c4}
+      \strng{authorbibnamehash}{f111bf465d26bb4a893b913b9e5242c4}
+      \strng{authornamehash}{f111bf465d26bb4a893b913b9e5242c4}
+      \strng{authorfullhash}{f111bf465d26bb4a893b913b9e5242c4}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Animal pests can cause significant damage to crops, leading to reduced yields and profits for farmers. To mitigate this problem, various methods, and techniques for detecting and repelling animals in crop fields have been developed. In this study, we conducted a survey to investigate the current state of the art in animal detection and repellent systems in crop fields. Our survey included a review of relevant articles published in scientific journals and conference proceedings. The results of our survey indicate that a variety of methods and techniques are currently being used, including physical barriers, sensory networks, video analytics, and hybrid techniques. However, there is a lack of standardization and comparison among these methods, and further research is needed to evaluate their effectiveness and determine the most appropriate solutions for different types of crops and environments. Our findings provide a useful resource for farmers, researchers, and industry professionals working to address the problem of animal pests in crop fields.}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Study of {{Methods}} for {{Animal Detection}} in {{Crop Fields}}}
+      \field{volume}{4}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://ijrpr.com/uploads/V4ISSUE2/IJRPR9883.pdf
+      \endverb
+      \verb{url}
+      \verb https://ijrpr.com/uploads/V4ISSUE2/IJRPR9883.pdf
+      \endverb
+    \endentry
+    \entry{IoTSensorNetwork}{article}{}
+      \name{author}{6}{}{%
+        {{hash=d25512638cf2d09ee2ae06bbd55e684a}{%
+           family={Knyva},
+           familyi={K\bibinitperiod},
+           given={Mindaugas},
+           giveni={M\bibinitperiod}}}%
+        {{hash=36c2327bc2211fb1fd9e07d4c24e0292}{%
+           family={Gailius},
+           familyi={G\bibinitperiod},
+           given={Darius},
+           giveni={D\bibinitperiod}}}%
+        {{hash=02530bfb888b2fcc59d1bafeebf47b06}{%
+           family={Balčiūnas},
+           familyi={B\bibinitperiod},
+           given={Gintautas},
+           giveni={G\bibinitperiod}}}%
+        {{hash=96d3471f1afc5b5185ffa1f5d24c092a}{%
+           family={Pratašius},
+           familyi={P\bibinitperiod},
+           given={Darius},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8afe06ae6232cb65b8bf645f4df76640}{%
+           family={Kuzas},
+           familyi={K\bibinitperiod},
+           given={Pranas},
+           giveni={P\bibinitperiod}}}%
+        {{hash=6a52e4631438452a535c9f679b165c97}{%
+           family={Kukanauskaitė},
+           familyi={K\bibinitperiod},
+           given={Aistė},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute}%
+      }
+      \strng{namehash}{7de8484ec8712f5088fd772ef45863d4}
+      \strng{fullhash}{fe7ea963ab8531f62f7f50cf83007edb}
+      \strng{bibnamehash}{fe7ea963ab8531f62f7f50cf83007edb}
+      \strng{authorbibnamehash}{fe7ea963ab8531f62f7f50cf83007edb}
+      \strng{authornamehash}{7de8484ec8712f5088fd772ef45863d4}
+      \strng{authorfullhash}{fe7ea963ab8531f62f7f50cf83007edb}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The monitoring and detection of wild animals is a significant topic for researchers who study the behavior, lifestyle, and environment of wild animals, as well as for people who encounter wildlife both in residential areas and near roads while traveling. An innovative wild-animal detection internet-of-things (IoT) sensor network running on harvested solar energy and detection methodology is described in this article. The sensor-networks node is implemented via the principle of an embedded system incorporating passive infrared sensors, a long-range (LoRa) module, and a solar panel for energy harvesting. For experimental purposes, a small IoT sensor network was implemented near the road. The network consists of eight nodes placed near the road with a distance of 50 m between nodes, a gateway for gathering detection data from the nodes, and a thermo-vision camera for verification of the received data.}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{21}
+      \field{title}{{{IoT Sensor Network}} for {{Wild-Animal Detection}} near {{Roads}}}
+      \field{urlday}{3}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{volume}{23}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{8929}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/s23218929
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1424-8220/23/21/8929
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1424-8220/23/21/8929
+      \endverb
+      \keyw{IoT sensor network,thermo-vision camera,wild-animal detection}
+    \endentry
+    \entry{surveyLPWAtechnology}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bb3330298883922086690be60f0cc2df}{%
+           family={Sinha},
+           familyi={S\bibinitperiod},
+           given={Rashmi\bibnamedelima Sharan},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=0f4ca1d5b425943ad82a484fee1e6734}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Yiqiao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=5fa8c3b3103e15fc6168f5172c99e19d}{%
+           family={Hwang},
+           familyi={H\bibinitperiod},
+           given={Seung-Hoon},
+           giveni={S\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{e2af9536356d795afe4bd2b2f64185e9}
+      \strng{fullhash}{975f6dae9429b1fbcea2d6b7b31bf608}
+      \strng{bibnamehash}{975f6dae9429b1fbcea2d6b7b31bf608}
+      \strng{authorbibnamehash}{975f6dae9429b1fbcea2d6b7b31bf608}
+      \strng{authornamehash}{e2af9536356d795afe4bd2b2f64185e9}
+      \strng{authorfullhash}{975f6dae9429b1fbcea2d6b7b31bf608}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{By 2020, more than twenty five billion devices would be connected through wireless communications. In accordance with the rapid growth of the internet of things (IoT) market, low power wide area (LPWA) technologies have become popular. In various LPWA technologies, narrowband (NB)-IoT and long range (LoRa) are two leading technologies. In this paper, we provide a comprehensive survey on NB-IoT and LoRa as efficient solutions connecting the devices. It is shown that unlicensed LoRa has advantages in terms of battery lifetime, capacity, and cost. Meanwhile, licensed NB-IoT offers benefits in terms of QoS, latency, reliability, and range.}
+      \field{issn}{2405-9595}
+      \field{journaltitle}{ICT Express}
+      \field{month}{3}
+      \field{number}{1}
+      \field{shorttitle}{A Survey on {{LPWA}} Technology}
+      \field{title}{A Survey on {{LPWA}} Technology: {{LoRa}} and {{NB-IoT}}}
+      \field{urlday}{3}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{volume}{3}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{14\bibrangedash 21}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.icte.2017.03.004
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2405959517300061
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2405959517300061
+      \endverb
+      \keyw{IoT,LoRa,LPWA,mMTC,NB-IoT}
+    \endentry
+    \entry{SigfoxEnergyConsumption}{article}{}
+      \name{author}{5}{}{%
+        {{hash=f021752f8c6a722d1dc717b23bb73ab1}{%
+           family={Gomez},
+           familyi={G\bibinitperiod},
+           given={Carles},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1d311b24534170d10d5ee4d803e0db31}{%
+           family={Veras},
+           familyi={V\bibinitperiod},
+           given={Juan\bibnamedelima Carlos},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=ceb51101bd164f5fef8f696045ca61b3}{%
+           family={Vidal},
+           familyi={V\bibinitperiod},
+           given={Rafael},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a88a15a5d1fecb36f40243c2f021f34e}{%
+           family={Casals},
+           familyi={C\bibinitperiod},
+           given={Lluís},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1b4c2c5b2bc76506aa5812c5d7a595d0}{%
+           family={Paradells},
+           familyi={P\bibinitperiod},
+           given={Josep},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute}%
+      }
+      \strng{namehash}{36dcb9e2b47dc65e95c0e63393993300}
+      \strng{fullhash}{6fc4d8f5fe9bb82cb6eecdfe17053ee7}
+      \strng{bibnamehash}{6fc4d8f5fe9bb82cb6eecdfe17053ee7}
+      \strng{authorbibnamehash}{6fc4d8f5fe9bb82cb6eecdfe17053ee7}
+      \strng{authornamehash}{36dcb9e2b47dc65e95c0e63393993300}
+      \strng{authorfullhash}{6fc4d8f5fe9bb82cb6eecdfe17053ee7}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Sigfox has become one of the main Low-Power Wide Area Network (LPWAN) technologies, as it has attracted the attention of the industry, academy and standards development organizations in recent years. Sigfox devices, such as sensors or actuators, are expected to run on limited energy sources; therefore, it is crucial to investigate the energy consumption of Sigfox. However, the literature has only focused on this topic to a very limited extent. This paper presents an analytical model that characterizes device current consumption, device lifetime and energy cost of data delivery with Sigfox. In order to capture a realistic behavior, the model has been derived from measurements carried out on a real Sigfox hardware module. The model allows quantifying the impact of relevant Sigfox parameters and mechanisms, as well as frame losses, on Sigfox device energy performance. Among others, evaluation results show that the considered Sigfox device, powered by a 2400 mAh battery, can achieve a theoretical lifetime of 1.5 or 2.5 years while sending one message every 10 min at 100 bit/s or 600 bit/s, respectively, and an asymptotic lifetime of 14.6 years as the message transmission rate decreases.}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{3}
+      \field{title}{A {{Sigfox Energy Consumption Model}}}
+      \field{urlday}{3}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{volume}{19}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{681}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/s19030681
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1424-8220/19/3/681
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1424-8220/19/3/681
+      \endverb
+      \keyw{energy,Internet of Things,IoT,LPWAN,modeling,performance evaluation,Sigfox,smart cities}
+    \endentry
+    \entry{astind250613}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4db2eb60906233021c65b511fe814034}{%
+           family={{Panasonic}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{4db2eb60906233021c65b511fe814034}
+      \strng{fullhash}{4db2eb60906233021c65b511fe814034}
+      \strng{bibnamehash}{4db2eb60906233021c65b511fe814034}
+      \strng{authorbibnamehash}{4db2eb60906233021c65b511fe814034}
+      \strng{authornamehash}{4db2eb60906233021c65b511fe814034}
+      \strng{authorfullhash}{4db2eb60906233021c65b511fe814034}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PIR MOTION SENSORS 2023}
+      \field{title}{Ast-Ind-250613}
+      \field{urlday}{3}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://industrial.panasonic.com/cdbs/www-data/pdf/EWA0000/ast-ind-250613.pdf
+      \endverb
+      \verb{url}
+      \verb https://industrial.panasonic.com/cdbs/www-data/pdf/EWA0000/ast-ind-250613.pdf
+      \endverb
+    \endentry
+    \entry{ImplementationCropProtection}{article}{}
+      \name{author}{5}{}{%
+        {{hash=d5fdd6f3add5c863011273d2f016fde4}{%
+           family={Deepa},
+           familyi={D\bibinitperiod},
+           given={Dr\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=e449ae396857596522ada1e358a3d230}{%
+           family={G},
+           familyi={G\bibinitperiod},
+           given={Alagulakshmi},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1cf5204c20cb544ec7626455baaaf93d}{%
+           family={R},
+           familyi={R\bibinitperiod},
+           given={Illakkiavathy},
+           giveni={I\bibinitperiod}}}%
+        {{hash=232957333d8d943d0d5a4f2b35176910}{%
+           family={M},
+           familyi={M\bibinitperiod},
+           given={Keerthana},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e99ced9d1dd5320f5082dec06988bf8d}{%
+           family={S},
+           familyi={S\bibinitperiod},
+           given={Preethi\bibnamedelima K.},
+           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{db03ff40e8e9c46984d7cda579fd20ee}
+      \strng{fullhash}{960616e7b98e81c24905af34a28d3847}
+      \strng{bibnamehash}{960616e7b98e81c24905af34a28d3847}
+      \strng{authorbibnamehash}{960616e7b98e81c24905af34a28d3847}
+      \strng{authornamehash}{db03ff40e8e9c46984d7cda579fd20ee}
+      \strng{authorfullhash}{960616e7b98e81c24905af34a28d3847}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In the agriculture field, the crop yielding isacquiring minimized by the wild animal attacks. The necessary factor is to stop the animals that pass out of the forest into the agricultural land,hasbecomeoneinalltheincreasingissuethatinfluence agriculture. The farmers ache heaps by the animal barrage. Generally, individuals additionally lost their lives whereas they struggle to banish the animals out of their place. The animals set foot into the agricultural land due to the shortage of water supplies within the forest areas and deforestation.To enhance agriculture because of the endurance of the fittest,wild animals that a set foot in to the Agricultural land is often viewed and a repelled device is employed to supply the ultrasound thatannoystheanimalsanddirectsthem.Togetherwithahearth detector is superimposed to avoid the spreading of fireside from the biological science areas to the agriculture. With the assistance of IoT,an alert are often given relating to the animal foot in and also the forestfire.}
+      \field{journaltitle}{Annals of the Romanian Society for Cell Biology}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{title}{Implementation of {{Crop Protection System}} against {{Wild Animals Attack}}}
+      \field{urlday}{30}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{3638\bibrangedash 3646}
+      \range{pages}{9}
+      \verb{urlraw}
+      \verb http://annalsofrscb.ro/index.php/journal/article/view/5031
+      \endverb
+      \verb{url}
+      \verb http://annalsofrscb.ro/index.php/journal/article/view/5031
+      \endverb
+    \endentry
+    \entry{MobileEdgeComputing}{article}{}
+      \name{author}{4}{}{%
+        {{hash=3202ad25d67b487bdd5f1c2ff0a386bc}{%
+           family={Abbas},
+           familyi={A\bibinitperiod},
+           given={Nasir},
+           giveni={N\bibinitperiod}}}%
+        {{hash=28f91f3a4b62ce57b7a533e742e8aae1}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=3dd8330f75229bd7c3a7054ea81590bb}{%
+           family={Taherkordi},
+           familyi={T\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c20ae31414f71ac198b8dc5766da5d62}{%
+           family={Skeie},
+           familyi={S\bibinitperiod},
+           given={Tor},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{4d8adf298ee5e591c08e8890beebee37}
+      \strng{fullhash}{1c5c265c485b3732a3e81eed9b05d9fc}
+      \strng{bibnamehash}{1c5c265c485b3732a3e81eed9b05d9fc}
+      \strng{authorbibnamehash}{1c5c265c485b3732a3e81eed9b05d9fc}
+      \strng{authornamehash}{4d8adf298ee5e591c08e8890beebee37}
+      \strng{authorfullhash}{1c5c265c485b3732a3e81eed9b05d9fc}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Mobile edge computing (MEC) is an emergent architecture where cloud computing services are extended to the edge of networks leveraging mobile base stations. As a promising edge technology, it can be applied to mobile, wireless, and wireline scenarios, using software and hardware platforms, located at the network edge in the vicinity of end-users. MEC provides seamless integration of multiple application service providers and vendors toward mobile subscribers, enterprises, and other vertical segments. It is an important component in the 5G architecture which supports variety of innovative applications and services where ultralow latency is required. This paper is aimed to present a comprehensive survey of relevant research and technological developments in the area of MEC. It provides the definition of MEC, its advantages, architectures, and application areas; where we in particular highlight related research and future directions. Finally, security and privacy issues and related existing solutions are also discussed.}
+      \field{issn}{2327-4662}
+      \field{journaltitle}{IEEE Internet of Things Journal}
+      \field{month}{2}
+      \field{number}{1}
+      \field{shorttitle}{Mobile {{Edge Computing}}}
+      \field{title}{Mobile {{Edge Computing}}: {{A Survey}}}
+      \field{urlday}{26}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{volume}{5}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{450\bibrangedash 465}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1109/JIOT.2017.2750180
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/8030322
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/8030322
+      \endverb
+      \keyw{Cloud computing,Edge computing,Fog computing,Internet of Things,Internet of Things (IoT),mobile cloud computing (MCC),Mobile communication,Mobile computing,mobile edge computing (MEC),Radio access networks,Servers}
+    \endentry
+    \entry{ThingsBoardOpensourceIoT}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a0bfaedebf77fd4719f8786ad886284e}{%
+           family={{thingsboard}},
+           familyi={t\bibinitperiod}}}%
+      }
+      \strng{namehash}{a0bfaedebf77fd4719f8786ad886284e}
+      \strng{fullhash}{a0bfaedebf77fd4719f8786ad886284e}
+      \strng{bibnamehash}{a0bfaedebf77fd4719f8786ad886284e}
+      \strng{authorbibnamehash}{a0bfaedebf77fd4719f8786ad886284e}
+      \strng{authornamehash}{a0bfaedebf77fd4719f8786ad886284e}
+      \strng{authorfullhash}{a0bfaedebf77fd4719f8786ad886284e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{ThingsBoard is an open-source IoT ❰Internet of Things❱ platform for device management ᐉ data collection ᐉ processing and visualization for your IoT projects}
+      \field{journaltitle}{ThingsBoard}
+      \field{langid}{english}
+      \field{title}{{{ThingsBoard}} --- {{Open-source IoT}} ({{Internet}} of {{Things}}) {{Platform}}}
+      \field{urlday}{5}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://thingsboard.io/
+      \endverb
+      \verb{url}
+      \verb https://thingsboard.io/
+      \endverb
+    \endentry
+    \entry{ArchitecturalBlueprints4+1}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1d00515fe991ba26ce9b4c5ca06934fa}{%
+           family={Kruchten},
+           familyi={K\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{1d00515fe991ba26ce9b4c5ca06934fa}
+      \strng{fullhash}{1d00515fe991ba26ce9b4c5ca06934fa}
+      \strng{bibnamehash}{1d00515fe991ba26ce9b4c5ca06934fa}
+      \strng{authorbibnamehash}{1d00515fe991ba26ce9b4c5ca06934fa}
+      \strng{authornamehash}{1d00515fe991ba26ce9b4c5ca06934fa}
+      \strng{authorfullhash}{1d00515fe991ba26ce9b4c5ca06934fa}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This article presents a model for describing the architecture of software-intensive systems, based on the use of multiple, concurrent views. This use of multiple views allows to address separately the concerns of the various `stakeholders' of the architecture: end-user, developers, systems engineers, project managers, etc., and to handle separately the functional and non functional requirements. Each of the five views is described, together with a notation to capture it. The views are designed using an architecture-centered, scenariodriven, iterative development process.}
+      \field{langid}{english}
+      \field{title}{Architectural {{Blueprints}}---{{The}} ``4+1'' {{View Model}} of {{Software Architecture}}}
+    \endentry
+    \entry{picowdatasheet}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{Pico-w-Datasheet}
+      \field{urlday}{31}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://datasheets.raspberrypi.com/picow/pico-w-datasheet.pdf
+      \endverb
+      \verb{url}
+      \verb https://datasheets.raspberrypi.com/picow/pico-w-datasheet.pdf
+      \endverb
+    \endentry
+    \entry{MANUALDELUSUARIOSENSORDEMOVIMIENTOPIRHCSR501}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{{MANUAL-DEL-USUARIO-SENSOR-DE-MOVIMIENTO-PIR-HC-SR501}}}
+      \field{urlday}{31}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://puntoflotante.net/MANUAL-DEL-USUARIO-SENSOR-DE-MOVIMIENTO-PIR-HC-SR501.pdf
+      \endverb
+      \verb{url}
+      \verb https://puntoflotante.net/MANUAL-DEL-USUARIO-SENSOR-DE-MOVIMIENTO-PIR-HC-SR501.pdf
+      \endverb
+    \endentry
+    \entry{mq2}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{Mq2}
+      \field{urlday}{31}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.pololu.com/file/0j309/mq2.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.pololu.com/file/0j309/mq2.pdf
+      \endverb
+    \endentry
+    \entry{DHT11basictemperaturehumidity}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2551c95bb0ab4f1b8eccde9897f0e9b9}{%
+           family={Industries},
+           familyi={I\bibinitperiod},
+           given={Adafruit},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{2551c95bb0ab4f1b8eccde9897f0e9b9}
+      \strng{fullhash}{2551c95bb0ab4f1b8eccde9897f0e9b9}
+      \strng{bibnamehash}{2551c95bb0ab4f1b8eccde9897f0e9b9}
+      \strng{authorbibnamehash}{2551c95bb0ab4f1b8eccde9897f0e9b9}
+      \strng{authornamehash}{2551c95bb0ab4f1b8eccde9897f0e9b9}
+      \strng{authorfullhash}{2551c95bb0ab4f1b8eccde9897f0e9b9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Discontinued - you can grab the\&nbsp;DHT20 - AHT20 Pin Module - I2C Temperature and Humidity Sensor\&nbsp;instead!\&nbsp;The DHT11 is a basic, ultra low-cost digital temperature and humidity ...}
+      \field{langid}{american}
+      \field{title}{{{DHT11}} Basic Temperature-Humidity Sensor + Extras}
+      \field{urlday}{31}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.adafruit.com/product/386
+      \endverb
+      \verb{url}
+      \verb https://www.adafruit.com/product/386
+      \endverb
+    \endentry
+    \entry{esp32wroom32_datasheet_en}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{Esp32-Wroom-32\_datasheet\_en}
+      \field{urlday}{31}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf
+      \endverb
+    \endentry
+    \entry{MPU6000Datasheet1}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{{{MPU-6000-Datasheet1}}}
+      \field{urlday}{31}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf
+      \endverb
+      \verb{url}
+      \verb https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf
+      \endverb
+    \endentry
+    \entry{norma303030tres}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=7cd377edae2eb4edd05c1ebfb060feaf}{%
+           family={EITB},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{7cd377edae2eb4edd05c1ebfb060feaf}
+      \strng{fullhash}{7cd377edae2eb4edd05c1ebfb060feaf}
+      \strng{bibnamehash}{7cd377edae2eb4edd05c1ebfb060feaf}
+      \strng{authorbibnamehash}{7cd377edae2eb4edd05c1ebfb060feaf}
+      \strng{authornamehash}{7cd377edae2eb4edd05c1ebfb060feaf}
+      \strng{authorfullhash}{7cd377edae2eb4edd05c1ebfb060feaf}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Euskadi se encuentra hoy en una situación meteorológica en la que se cumple la regla 30-30-30 sobre el riesgo de incendios forestales, lo que significa que la temperatura supera los 30 grados, el viento sobrepasa los 30 km/h y la humedad relativa del aire es inferior al 30 \%.}
+      \field{chapter}{sociedad}
+      \field{journaltitle}{EITB}
+      \field{langid}{spanish}
+      \field{month}{7}
+      \field{shorttitle}{{La norma 30-30-30}}
+      \field{title}{{La norma 30-30-30: Los tres factores que indican que el riesgo de incendios es alto en Euskadi}}
+      \field{urlday}{14}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.eitb.eus/es/noticias/sociedad/detalle/8909254/la-norma-303030-los-tres-factores-que-indican-que-riesgo-de-incendios-es-alto-en-euskadi/
+      \endverb
+      \verb{url}
+      \verb https://www.eitb.eus/es/noticias/sociedad/detalle/8909254/la-norma-303030-los-tres-factores-que-indican-que-riesgo-de-incendios-es-alto-en-euskadi/
+      \endverb
+    \endentry
+    \entry{NodeRED}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{Node-{{RED}}}
+      \field{urlday}{15}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://nodered.org/
+      \endverb
+      \verb{url}
+      \verb https://nodered.org/
+      \endverb
+    \endentry
+    \entry{AEMETOpenDataAgencia}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f6b3896cc86c4973f8c2098753e5ac25}{%
+           family={Meteorología},
+           familyi={M\bibinitperiod},
+           given={Agencia\bibnamedelima Estatal},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{f6b3896cc86c4973f8c2098753e5ac25}
+      \strng{fullhash}{f6b3896cc86c4973f8c2098753e5ac25}
+      \strng{bibnamehash}{f6b3896cc86c4973f8c2098753e5ac25}
+      \strng{authorbibnamehash}{f6b3896cc86c4973f8c2098753e5ac25}
+      \strng{authornamehash}{f6b3896cc86c4973f8c2098753e5ac25}
+      \strng{authorfullhash}{f6b3896cc86c4973f8c2098753e5ac25}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Acceso al API de AEMET para la realización de peticiones de datos en formatos reutilizables}
+      \field{langid}{spanish}
+      \field{title}{{AEMET OpenData - Agencia Estatal de Meteorología - AEMET. Gobierno de España}}
+      \field{urlday}{5}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.aemet.es/es/datos_abiertos/AEMET_OpenData
+      \endverb
+      \verb{url}
+      \verb https://www.aemet.es/es/datos_abiertos/AEMET_OpenData
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
