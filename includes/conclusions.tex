@@ -1,5 +1,5 @@
-\section{Conclusions and Next Steps}
-
+\section{Conclusions and Future Work}
+\subsection*{Conclusions}
 The research done for this project shows the importance of \acrshort{iot} solutions in the farming industry. More specific, new solutions need 
 to be achieved in the design of crop protection applications. And most importantly, fires are not the only risk that farm faces.
 
@@ -10,5 +10,21 @@ for new scenarios like machine learning, applied decision support algorithms and
 In the first stage, the edge platform main functionalities and decision systems were implemented, along with simulated devices and dashboard solutions to 
 give the user all the necessary information processed in a real-time manner.
 
-For the next stage of the project, the hardware implementation of the nodes will be the main objective. Secondly, efforts will be used to implement the network 
-control subsystem and it's functionalities.
+In the second stage, the real hardware implementation of the nodes was achieved. In addition, an enhancement of the solution was made, building an application around the \acrshort{mec} platform in order to use the most common \acrshort{iot} 
+devices, mobile phones. Finally, the possibility of commanding the network for cleaning tasks was added.
+
+Finally all the necessary validations and test were made in order to check the required functionalities.
+
+\subsection*{Future Work}
+
+Due to the limitations in time, there are some good ideas that could apply to this project:
+\begin{enumerate}
+    \item The nodes need further enhancement in the selection of the \acrshort{mcu} in order to obtain the lowest possible power consumption. Also, an encapsulation design 
+        for the nodes is needed.
+    \item Due to the limitations, the targeted technology of \acrshort{lorawan} wasn't used and needs to be tested. A gateway would be needed before the Thingsboard platform.
+    \item On of the key aspects that need to be tackled is the modification of the system in order to achieve full scalability. This 
+        could be done creating a mission manager that controls the entities in ThingsBoard, allowing creation and expansion with new nodes in 
+        an already existing farm.
+    \item Finally, we propose a system that utilizes the knowledge extraction database combined with weather data\cite{AEMETOpenDataAgencia} in order to generate a predictor of 
+        animal intrusion and fire hazards.
+\end{enumerate}
