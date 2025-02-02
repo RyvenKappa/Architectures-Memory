@@ -1,0 +1,6 @@
+{ 
+    "ts": "0000", 
+    "status": false, 
+    "coordinates": ["latitude","longitude","longitude"],
+    "deviceName": "Fence Node XX" 
+}
