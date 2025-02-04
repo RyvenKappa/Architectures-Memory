@@ -13,3 +13,12 @@ First, a validation process was followed for each expected functionality. First,
 \end{enumerate}
 
 Finally, an integration validation was done, were all the nodes were sending events and different users were interacting with the system, both from the dashboard and the mobile application.
+
+At last, some numbers to verify the correct functionality integration of the system were obtained:
+\begin{itemize}
+    \item The end node cycle, which focuses on power consumption last between \texttt{100ms} to \texttt{200ms}.
+    \item The transmission time spent on that cycle goes from \texttt{90ms} to \texttt{180ms}.
+    \item The node maintains a default sleep rate of 3 seconds between cycles. When an RPC to stop sending data is received, this sleep will last longer, about 15 seconds.
+    \item The alarm propagation to the ThingsBoard dashboard most of the time takes less than 2 seconds.
+    \item The alarm propagation to the user application takes less than 7 seconds.
+\end{itemize}
